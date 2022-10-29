@@ -40,6 +40,8 @@ ul {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
 }
 
 a {
@@ -90,6 +92,7 @@ a.current {
   font-size: 14px;
   line-height: calc(16 / 12);
   letter-spacing: 0.02em;
+  border: 1px #ECECEC;
 }
 
 .contacts-header a {
@@ -191,7 +194,6 @@ p {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -214,6 +216,7 @@ p {
   margin-left: 215px;
   margin-right: 215px;
   outline: 1px solid #f44336;
+  margin-bottom: 94px;
 }
 
 .our-activity-box h2 {
@@ -250,10 +253,22 @@ p {
   color: var(--text-grey-color);
 }
 
+.our-team-box h2 {
+  margin-top: 94px;
+}
+
+.our-team-img {
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
 /* Footer */
 
 .footer {
   background-color: var(--background-second-color);
+  width: 1600px;
+  height: 252px;
+  left: 0px;
 }
 
 .contacts-footer-item,
@@ -279,6 +294,28 @@ p {
 .contact-footer-address a:focus {
   color: var(--link-hover-color);
 }
+
+.logo-footer,
+.contacts-footer a {
+  display: inline-block;
+  margin-left: 215px;
+}
+
+.logo-footer {
+  margin-top: 60px;
+}
+
+.contacts-footer {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.contacts-footer-item {
+  margin-top: 9px;
+}
+
+
+
 /* Portfolio page */
 
 /* Filters */
@@ -322,9 +359,6 @@ p {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-
-  left: 639px;
-  top: 1010px;
 }
 
 .project-box {
@@ -342,4 +376,12 @@ border: 1px solid var(--box-border-color);
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-grey-color);
+}
+
+.portfolio-block-box {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.portfolio-filters-box {
+  margin-bottom:34px;
 }
