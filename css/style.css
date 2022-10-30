@@ -30,6 +30,8 @@ html {
 
 .container {
   max-width: 1230px;
+  padding-right: 5px;
+  padding-left: 5px;
   margin: 0 auto;
 }
 
@@ -474,10 +476,15 @@ p {
    justify-content: center;
 }
 
-.portfolio-projects-box li:not(:last-child) {
+.portfolio-projects-box li {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+.portfolio-projects-box li:nth-child(3n) {
+  margin-right: 0;
+}
+
 
 .project-box h2 {
   text-align: left;
