@@ -55,6 +55,7 @@ a:active {
 
 .main-nav {
   display: flex;
+  margin: 0 215px;
 }
 
 .header {
