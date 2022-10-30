@@ -31,7 +31,7 @@ html {
 .container {
   max-width: 1230px;
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   outline: 2px dashed #f44336;
   border: 2px dashed blue;
 }
@@ -52,6 +52,14 @@ a:visited,
 a:link,
 a:active {
   color: var(--main-color);
+}
+
+/* Header */
+
+.main-nav {
+  display: flex;
+  border: 1px #ECECEC;
+  align-items: center;
 }
 
 /* Logo styles */
@@ -92,8 +100,30 @@ a.current {
   font-size: 14px;
   line-height: calc(16 / 12);
   letter-spacing: 0.02em;
-  border: 1px #ECECEC;
 }
+
+/* .header-list,
+.contacts-header {
+  display: flex;
+} */
+
+.header-list .header-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-header .header-list-item + .header-list-item {
+margin-left: 50px;
+}
+
+.header-list .header-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .header-list .header-list-item {
+  display: flex;
+  margin-right: 50px;
+} */
 
 .contacts-header a {
   font-style: normal;
@@ -102,6 +132,7 @@ a.current {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--text-grey-color);
+  display: flex;
 }
 
 /* Banner styles */
@@ -145,8 +176,10 @@ h3 {
 }
 
 p {
-  /* margin-top: 0;
-  margin-bottom: 0; */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .button {
@@ -207,20 +240,18 @@ p {
   outline: 1px solid #f44336;
 }
 
+.description-box ul {
+  display: flex;
+  text-align: left;
+}
+
+.description-box li:not(:last-child) {
+  margin-right: 10px;
+}
+
 .description-box h3 {
   margin-bottom: 10px;
-}
-
-.our-activity-box {
-  margin-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-  outline: 1px solid #f44336;
-  margin-bottom: 94px;
-}
-
-.our-activity-box h2 {
-  margin-bottom: 50px;
+  text-align: left;
 }
 
 .description-title {
@@ -236,12 +267,68 @@ p {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--text-grey-color);
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.our-activity-box {
+  margin-top: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+  outline: 1px solid #f44336;
+  margin-bottom: 94px;
+}
+
+.our-activity-box h2 {
+  margin-bottom: 50px;
+}
+
+.activity-images {
+  display: flex;
+}
+
+.activity-images li:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Our team */
 
 .our-team {
   background-color: var(--background-third-color);
+}
+
+.our-team-box {
+  height: 648px;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
+.our-team-box h2 {
+  margin-top: 94px;
+}
+
+.our-team-img {
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+.our-team img {
+  margin-bottom: 50px;
+}
+
+.our-team-img ul {
+  display: flex;
+}
+
+.our-team-img li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team p {
+  margin-block-end: 0;
+  margin-block-start: 0%;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .our-team-position {
@@ -253,14 +340,7 @@ p {
   color: var(--text-grey-color);
 }
 
-.our-team-box h2 {
-  margin-top: 94px;
-}
 
-.our-team-img {
-  margin-top: 50px;
-  margin-bottom: 94px;
-}
 
 /* Footer */
 
@@ -320,6 +400,19 @@ p {
 
 /* Filters */
 
+.portfolio-block-box {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.portfolio-filters {
+  margin-bottom:34px;
+}
+
+.portfolio-filters li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-filter-button {
   display: inline-block;
   font-weight: 500;
@@ -335,11 +428,6 @@ p {
   min-width: 103px;
 }
 
-.button-usi {
-  padding: 6px 25px;
-  min-width: 73px;
-}
-
 
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
@@ -351,7 +439,23 @@ p {
   cursor: pointer;
 }
 
+.button-usi {
+  padding: 6px 25px;
+  min-width: 73px;
+}
+
+
+
 /* Projects */
+
+.portfolio-projects-box li {
+  display: flex;
+}
+
+.portfolio-projects-box li:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 
 .project-box h2 {
   font-style: normal;
@@ -378,10 +482,4 @@ border: 1px solid var(--box-border-color);
   color: var(--text-grey-color);
 }
 
-.portfolio-block-box {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-.portfolio-filters-box {
-  margin-bottom:34px;
-}
+
