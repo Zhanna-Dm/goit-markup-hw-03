@@ -463,6 +463,10 @@ p {
   margin-right: 0;
 }
 
+.project-box img {
+  display: block;
+}
+
 .project-descr {
   padding: 24px 20px;
   box-sizing: border-box;
