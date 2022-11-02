@@ -335,7 +335,7 @@ p {
 
 .our-team-members {
   padding-top: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team p {
@@ -366,7 +366,7 @@ p {
   display: inline-block;
 }
 
-.contacts-footer {
+address {
   margin-top: 20px;
 }
 
@@ -476,6 +476,7 @@ p {
 }
 
 .project-box h2 {
+  margin-bottom: 4px;
   text-align: left;
   font-style: normal;
   font-weight: 700;
